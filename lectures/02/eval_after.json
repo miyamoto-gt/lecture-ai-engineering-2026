@@ -1,0 +1,147 @@
+{
+  "summary": {
+    "label": "after",
+    "n": 15,
+    "format_rate": 0.0,
+    "content_rate": 0.0,
+    "both_rate": 0.0,
+    "seconds": 44.3
+  },
+  "rows": [
+    {
+      "question": "過学習ってどういう状態のことですか？",
+      "raw": "モデルが学習したデータに過ぎず、テストデータで評価しにくい状態。",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "トランスポート（stdio・Streamable HTTP）の意味を教えてください",
+      "raw": "{\"answer\": \"標準入力と標準出力を介してプログラムと外部のシステム（ブラウザ、サーバー、ファイルなど）を接続する仕組み。stdio はプログラムから外部へ、Streamable HTTP は外部からプログラムへ。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "レート制限に引っかかるとはどういうことですか？",
+      "raw": "{\"answer\": \"学習データの生成量や出力の頻度を上限に設定する。上限を超えると生成が止まり、出力の頻度が上がらない。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "教師ありファインチューニング（SFT）はどんな学習方法ですか？",
+      "raw": "「入力」と「出力」の2つの種類に分類される学習方法。入力に適切な出力を学習させる。モデルの出力を予測し、その予測の値を入力として使う。",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "ツールの説明文はどんな役割を持っていますか？",
+      "raw": "ツールを呼び出す前に、どのような操作を行うかや、どのような結果を期待するかの説明。呼び出しの引数や戻り値を明確にすることで、モデルが誤ってツールを呼び出すのを防ぎ、結果を予測できるモデルに渡す。",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "オーバーフィッティングってどういう意味ですか？",
+      "raw": "モデルがより多くのデータに渡す入力と出力を、より多くのデータに渡す入力と出力を同じように作ることで、学習したモデルが過学習しやすくなる現象。",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "stdioはどういうやりとりの方法ですか？",
+      "raw": "{\"answer\": \"stdioとは、標準入出力の仕組み。Pythonではinput()とprint()で、Pythonの関数呼び出しを介して、ファイルへの書き込みや読み込みもできる。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "429エラーが返ってくるのはどんなときですか？",
+      "raw": "{\"answer\": \"ファイルの書き込みや読み込みに使用できない高アクセス権限（例：rootへの書き込み、ファイルの追加、編集、コピー、削除、重なり、共有、管理、システムへの書き込み、システムへの追加、システムへの編集、システムへのコピー、システムへの削除、システムへの管理、システムへの追加、システムへの編集、システムへのコピー、システムへの削除、システムへの管理、システムへの追加、システムへの編集、",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "指示チューニングの意味を教えてください",
+      "raw": "モデルの出力を、指定されたフォーマットやテキストの構造に合わせるために、入力と出力の構造を同じにする処理。出力の形式や文字列の長さなどを調整する。",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "ツールスキーマは何のために書くものですか？",
+      "raw": "{\"answer\": \"ツールが呼び出される前の入力と出力の型を定義する。モデルがどの入力を受け取り、どの出力を返すかを決める。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "RAGについて教えてください",
+      "raw": "{\"answer\": \"モデルの出力を外部のデータソースから取得し、そのデータをモデルに渡して回答を返す仕組み。本講座の第2回演習では、LLMの出力をGitHubのGitHub Codespacesのrepoのコードから取得し、そのコードをモデルに渡して質問を返す。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "DPOってどんな手法ですか？",
+      "raw": "{\"answer\": \"モデルが指示された行動を、別のモデル（エージェントや外部システム）が実際に実行し、その結果をモデルに返すことで学習する手法。結果の分布をモデルの行動に強く影響し、指示の精度や柔軟性を高める。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "埋め込み（エンベディング）の意味を教えてください",
+      "raw": "モデルの出力を、特定のテキストや数値で表し、その表示をモデルに渡す仕組み。同じ質問でも、テキストの表示や数値の表示が変わる。",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "勾配ハーネスとは何ですか？",
+      "raw": "モデルの出力を直感的に理解できるようにするツール。出力の符号を直感的に読みやすくする。",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "コンテキスト再帰チューニングについて説明してください",
+      "raw": "{\"answer\": \"モデルが質問の文脈（例：特定の文章の続き、特定の人物の発言、特定の時間）をモデルに渡すこと。モデルが同じ質問を同じ文脈で繰り返して、より深い理解や予測ができるようになる。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    }
+  ]
+}
