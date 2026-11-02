@@ -1,0 +1,147 @@
+{
+  "summary": {
+    "label": "search",
+    "n": 15,
+    "format_rate": 0.06666666666666667,
+    "content_rate": 0.0,
+    "both_rate": 0.0,
+    "seconds": 39.6
+  },
+  "rows": [
+    {
+      "question": "過学習ってどういう状態のことですか？",
+      "raw": "{\"answer\": \"過学習は、学習データにだけ過度に適合し、未知の入力に対する性能が落ちる状態です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "トランスポート（stdio・Streamable HTTP）の意味を教えてください",
+      "raw": "{\"answer\": \"MCPのクライアントとサーバーがやりとりする経路を指す。stdio ではクライアントがサーバーをサブプロセスとして起動し、標準入出力でメッセージを交換する。Streamable HTTP ではサーバーがURLで待ち受け、別のプロセスや別の機械から接続できる。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "レート制限に引っかかるとはどういうことですか？",
+      "raw": "{\"answer\": \"リート制限（Rate Limiting）とは、サーバーが特定の時間あたりのリクエスト数やトークン数の上限を制限する仕組みです。超えるとHTTP 429（Too Many Requests）などのエラーが返されるため、エージェントは1つの質問で複数回LLMを呼ぶため、この上限に達しやすいです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "教師ありファインチューニング（SFT）はどんな学習方法ですか？",
+      "raw": "{\"answer\": \"教師ありファインチューニング（SFT）は、入力と望ましい出力のペアを使ってモデルを追加学習させる方法です。指示に従う振る舞いを身につけさせる代表的な手法です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "ツールの説明文はどんな役割を持っていますか？",
+      "raw": "{\"answer\": \"ツールを呼び出すための説明文\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "オーバーフィッティングってどういう意味ですか？",
+      "raw": "{\"answer\": \"学習データにだけ過度に適合し、未知の入力に対する性能が落ちる状態。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "stdioはどういうやりとりの方法ですか？",
+      "raw": "{\"answer\": \"stdio では、クライアントがサーバーをサブプロセスとして起動し、標準入出力でメッセージを交換する\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "429エラーが返ってくるのはどんなときですか？",
+      "raw": "{\"answer\": \"超えるリクエスト数やトークン数（例：429）を返すのは、リクエスト数が上限を超えたり、トークン数が不足したり、またはリクエストが返却されなかった場合です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "指示チューニングの意味を教えてください",
+      "raw": "{\"answer\": \"指示チューニングは、モデルが指示に従う振る舞いを身につけさせるための学習手法です。これは、モデルの出力を指示（例えば、質問と模範回答）に基づいて修正・再学習することで、指示に従う能力を強化するものです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "ツールスキーマは何のために書くものですか？",
+      "raw": "{\"answer\": \"ツールスキーマは、モデルが呼び出せるように用意した関数。モデルはツールの名前・説明・引数の型を見て、必要なときに引数を決めて呼び出しを依頼し、実行はプログラム側が行う。検索、計算、ファイル操作、外部APIの呼び出しなどに使う。ツールスキーマは、モデルが呼び出せるように用意した関数。モデルはツールの名前・説明・引数の型を見て、",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "RAGについて教えてください",
+      "raw": "{\"answer\": \"RAG（Retrieval-Augmented Generation）は、検索結果をベースに生成する生成モデルの一種です。検索結果をベースに生成する生成モデルの一種です。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "DPOってどんな手法ですか？",
+      "raw": "{\"answer\": \"DPO (Direct Preference Optimization) は、学習の初期段階で、モデルの出力がユーザーの意図と一致するよう、ユーザーの行動や評価を直接に学習させる手法です。従来の方法では、モデルが「正しい」ことを学習するのではなく、ユーザーが「正しい」ことを評価する仕組みを構築し、その評価をモデルに直接学習させるアプローチです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "埋め込み（エンベディング）の意味を教えてください",
+      "raw": "{\"answer\": \"埋め込み（エンベディング）は、HTML などのテキスト表示用 HTML ファイルに、テキストや画像などのコンテンツを埋め込む方法です。この方法により、ファイルサイズが小さくなり、読みやすくなります。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "勾配ハーネスとは何ですか？",
+      "raw": "{\"answer\": \"勾配ハーネスとは、LLMの周りをループ・ツール・画面（UI）などで包み、実際に作業できるようにするプログラムのことです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "コンテキスト再帰チューニングについて説明してください",
+      "raw": "{\"answer\": \"コンテキスト再帰チューニングは、モデルの出力を元の文脈（コンテキスト）に再帰的に適用し、より自然な表現や文脈を生成する手法です。これは、単一の文脈に対してのみ適用されるのではなく、複数の文脈を結合して生成するアプローチです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    }
+  ]
+}
