@@ -32,6 +32,8 @@ from pydantic_ai.providers.google import GoogleProvider
 
 from app import tools
 from app.config import MODEL, api_error_message, get_api_key
+from dotenv import load_dotenv
+load_dotenv()
 
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_CASES = ROOT / "data" / "eval" / "lec04_cases.jsonl"
