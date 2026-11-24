@@ -34,7 +34,11 @@ from app import tools
 from app.retrieval import run_full_context
 from app.config import MODEL, api_error_message, get_api_key
 from dotenv import load_dotenv
+import os
+
 load_dotenv()
+
+api_key = os.getenv("GEMINI_API_KEY")
 
 INSTRUCTIONS = """\
 あなたはAIエンジニアリング講座（AIE2026）の学習支援エージェントです。
