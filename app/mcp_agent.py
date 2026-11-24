@@ -26,6 +26,8 @@ from pydantic_ai.models.test import TestModel
 from pydantic_ai.providers.google import GoogleProvider
 
 from app.config import MODEL, api_error_message, get_api_key
+from dotenv import load_dotenv
+load_dotenv()
 
 # 用語集サーバー（app/mcp_server.py）のツールを中心にした指示文。
 # 最後の 1 行は、設定ファイルに足したほかのサーバーのツールも使えるようにするためのもの
